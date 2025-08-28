@@ -432,7 +432,8 @@ default, you must create it manually.
         "mediaUpdateInterval": 500,
         "showOnHover": true,
         "enableMedia": true,
-        "enablePerformance": true
+        "enablePerformance": true,
+        "enableWeather": true
     },
     "launcher": {
         "actionPrefix": ">",
