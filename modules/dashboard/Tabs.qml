@@ -16,11 +16,20 @@ Item {
     required property PersistentProperties state
     readonly property alias count: bar.count
     property list<var> tabsModel: [
-        {  iconName: "dashboard", tabtext: qsTr("Dashboard") },
-        Config.dashboard.enableMedia ? { iconName: "queue_music", tabtext: qsTr("Media") } : null,
-        Config.dashboard.enablePerformance ? { iconName: "speed", tabtext: qsTr("Performance") } : null,
-        Config.dashboard.enableWeather ? { iconName: "cloud", tabText: qsTr("Weather") } : null,
-    ].filter(tab => tab != null) 
+        {
+            iconName: "dashboard",
+            tabtext: qsTr("Dashboard")
+        },
+        Config.dashboard.enableMedia ? {
+            iconName: "queue_music",
+            tabtext: qsTr("Media")
+        } : null, Config.dashboard.enablePerformance ? {
+            iconName: "speed",
+            tabtext: qsTr("Performance")
+        } : null, Config.dashboard.enableWeather ? {
+            iconName: "cloud",
+            tabText: qsTr("Weather")
+        } : null,].filter(tab => tab != null)
 
     implicitHeight: bar.implicitHeight + indicator.implicitHeight + indicator.anchors.topMargin + separator.implicitHeight
 
@@ -35,7 +44,7 @@ Item {
         background: null
 
         onCurrentIndexChanged: root.state.currentTab = currentIndex
-        
+
         Repeater {
             model: tabsModel
             Tab {
