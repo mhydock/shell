@@ -175,7 +175,7 @@ WlSessionLockSurface {
         id: lockContent
 
         readonly property int size: lockIcon.implicitHeight + Tokens.padding.large * 4
-        readonly property int radius: size / 4 * Tokens.rounding.scale
+        readonly property int radius: Tokens.rounding.extraLarge
 
         anchors.centerIn: parent
         implicitWidth: size

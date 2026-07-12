@@ -18,6 +18,7 @@ RowLayout {
         WeatherInfo {
             Layout.fillWidth: true
             rootHeight: root.height
+            topLeftRadius: Tokens.rounding.extraLarge
         }
 
         Fetch {
@@ -29,6 +30,7 @@ RowLayout {
             Layout.fillWidth: true
             Layout.fillHeight: true
             lock: root.lock
+            bottomLeftRadius: Tokens.rounding.extraLarge
         }
     }
 
@@ -42,14 +44,15 @@ RowLayout {
 
         Resources {
             Layout.fillWidth: true
+            topRightRadius: Tokens.rounding.extraLarge
         }
 
         StyledRect {
             Layout.fillWidth: true
             Layout.fillHeight: true
-
-            bottomRightRadius: Tokens.rounding.extraLarge
+            
             radius: Tokens.rounding.medium
+            bottomRightRadius: Tokens.rounding.extraLarge
             color: Colours.tPalette.m3surfaceContainer
 
             NotifDock {

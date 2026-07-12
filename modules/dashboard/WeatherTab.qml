@@ -67,7 +67,7 @@ Item {
             Layout.fillWidth: true
             implicitHeight: bigInfoRow.implicitHeight + Tokens.padding.small
 
-            radius: Tokens.rounding.extraLarge * 2
+            radius: Tokens.rounding.large
             color: Colours.tPalette.m3surfaceContainer
 
             RowLayout {
@@ -213,7 +213,7 @@ Item {
 
         Layout.fillWidth: true
         Layout.preferredHeight: 60
-        radius: Tokens.rounding.medium
+        radius: Tokens.rounding.large
         color: Colours.tPalette.m3surfaceContainer
 
         Row {
